@@ -4,7 +4,7 @@
 - Criação do projeto
 ```
 docker run -it --rm \
-    -v $(pwd):/app petronetto/docker-laravel \
+    -v $(pwd):/app luanpereiranc/docker-laravel \
     composer create-project laravel/laravel app
 ```
 
@@ -13,5 +13,5 @@ docker run -it --rm \
 docker run -p 8080:80 \
     -v $(pwd)/app:/app \
     --name webserver \
-    -d petronetto/docker-laravel
+    -d luanpereiranc/docker-laravel
 ```
